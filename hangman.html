@@ -87,6 +87,7 @@ function newgame()
 guesscounter=0;
 guessedletters = "";
 document.getElementById("used").innerHTML="";
+document.getElementById("winlose").innerHTML="";
 get_new_word();
 initdisplay();
 
@@ -277,7 +278,7 @@ for (var i=0; i<26; i++)
 	document.write("<img src=\"Letter-" + c + "-icon.png\" onclick=\"guess(\'" + c + "\')\">");
 }
 document.write("<br><br><br>Used Letters: <span id=\"used\"></span>");
-document.write("<br><br><br><span id=\"winlose\">Result:</span>");
+document.write("<br><br><br>Result:<span id=\"winlose\"></span><br>");
 document.write("<input type=\"button\" value=\"New Game\" onclick=\"newgame()\">")
 
 
