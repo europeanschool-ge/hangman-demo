@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Welcome to Hangman!</title>
@@ -272,11 +272,14 @@ document.write("<h1 id=\"hangman\">Hangman</h1>");
 document.write("<canvas id=\"myCanvas\" width=\"180\" height=\"250\" >Your browser does not support the HTML5 canvas tag.</canvas>");
 //write the word
 document.write("<br><br><span id=\"word\"></span><br><br>");
+
 //display the letters
+//this.style.backgroundColor='blue'
+
 for (var i=0; i<26; i++)
 {
 	var c = String.fromCharCode(97 + i);
-	document.write("<img src=\"Letter-" + c + "-icon.png\" onclick=\"guess(\'" + c + "\')\">");
+	document.write("<img src=\"Letter-" + c + "-icon.png\" onclick=\"guess(\'" + c + "\');\">");
 }
 document.write("<br><br><br>Used Letters: <span id=\"used\"></span>");
 document.write("<br><br><br>Result:<span id=\"winlose\"></span><br>");
